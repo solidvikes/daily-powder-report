@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal extra styles */
+:root { --border:#e5e7eb; --muted:#6b7280; }
+.container { @apply max-w-5xl mx-auto px-4; }
+.card { @apply border rounded-2xl p-4; border-color: var(--border); }
+.badge { @apply text-xs px-2 py-1 rounded-full bg-gray-100; }
+.ad { @apply border border-dashed rounded-2xl flex items-center justify-center text-gray-500 h-24; border-color: var(--border); }
+.header { @apply sticky top-0 bg-white/80 backdrop-blur border-b z-10; border-color: var(--border); }
+.btn { @apply rounded-xl px-3 py-2 bg-gray-900 text-white; }
+.small { @apply text-gray-500 text-xs; }
+.grid3 { @apply grid gap-3 md:grid-cols-3; }
